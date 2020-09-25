@@ -1,0 +1,38 @@
+.fa-4x {
+    font-size: 4em;
+}
+.service-icon{
+    display: inline-block;
+    height:2em;
+    position: relative;
+    width:2.5em ;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    .text-primary {
+        color: #fed136 !important;
+    }
+    .fa-stack-1x{
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+}
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+}
+.svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
+}
+.col-2{
+    h2{
+        font-size: 3rem;
+        line-height: 3.1rem;
+    }
+}

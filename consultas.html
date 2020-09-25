@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--META-->
+		<meta charset="utf-8">
+		<title class="titulo">Freccia Nera</title>
+		<!--STYLES-->
+		<link rel="stylesheet" href="css/style.css"/>
+		<link href="css/fontawesome.css" rel="stylesheet">
+		<link href="css/brands.css" rel="stylesheet">
+		<link href="css/solid.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<section class="contact">
+				<div><i class="fab fa-instagram"></i></div>
+				<div><i class="fab fa-whatsapp"></i></div>
+				<div><i class="fas fa-map-marker-alt"></i><span>  Rosario, Argentina</span></div>
+			</section>
+			<nav>
+					<img src="Imagenes/LOGO.png" alt="flecha"  class="logo">
+				<ul>
+				<li><a href="index.html"> Inicio</a></li>
+				<li><a href="collecciones.html">Colección</a></li>
+				<li><a href="sale.html"> Sale</a></li>	
+				<li><a href="consultas.html"> Consultas</a></li>
+				<li><a href="nosotros.html"> Nosotros</a></li>
+				</ul>
+			</nav>
+		</header> 
+		<section>
+			<h2 class="title1">CONSULTAS</h2>
+			<p>HOLA!  DEJANOS TODAS TUS DUDAS Y NOS ESTAREMOS CONTACTANDO A LA BREVEDAD PARA RESOLVERLAS. GRACIAS POR ELEGIRNOS.</p>
+			<form action="gracias.html" method="post" class="container" >
+			<fieldset >
+				<label for="nombre">Nombre(*)</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Escribi tu nombre y apellido"><br>
+				<label for="correo">Correo (*)</label>
+				<input type="text" name="correo" placeholder="......@ejemplo.com"><br>
+				<label for="asunto">Asunto(*)</label>
+				<select name="asunto"><br>
+					<option></option>
+					<option value="1">Cambios</option>
+					<option value="2">Envios</option>
+					<option value="3">Stock</option>
+					<option value="4">Otros</option>
+				</select><br>
+				<label>Comentarios</label>
+				<textarea name="comentarios" cols="20" rows="5"></textarea><br>
+				<input type="checkbox" name="opcion" value="si">Suscribirse a nuestro Newsletter<br>
+				<input type="submit" name="botom" value="ENVIAR">
+				<input type="reset" name="Borrar" value="BORRAR">
+			</fieldset>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2020</p>
+		</footer>
+	</body>
+</html>

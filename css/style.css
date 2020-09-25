@@ -1,0 +1,188 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/********CSS ESTILOS********/
+h1{
+    font-family: Megrim;
+    background:#f6f4e6;
+    color:#1e2022;
+    font-size:2rem ;
+    }
+h2{
+    border: solid #f6f4e6;
+    color:#f6f4e6 ;
+    background: #1e2022;
+    font-size: 2.5rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    }
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: solid #1e2022;
+    margin: 0.1rem;
+}
+body{
+    color:#1e2022;
+    background:#f6f4e6 ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0.3rem;
+    }
+nav ul li a {
+    text-decoration: none;
+    color:#1e2022;
+    padding: 0rem 0.5rem;
+    margin: 0.35rem;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+
+.container{
+    background:#f6f4e6;
+    color:#1e2022;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0rem;
+    border: solid #1e2022 ;
+}
+.container div{
+    margin: 2rem;
+    text-align: center;
+}
+form{
+    padding: 3rem;
+}
+form fieldset label {
+    padding: 0.5rem;
+}
+p{
+    margin: 3rem;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+/********HEADER********/
+header{
+    background:linear-gradient(to top, #f6f4e6, #52575d);
+    padding: 0rem;
+    border: solid #1e2022 ;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+}
+ul{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid #1e2022;
+}
+.contact{
+    border: solid #f6f4e6 0.12rem;
+    background:#1e2022 ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color:#f6f4e6;
+    font-size:1rem ;
+    padding: 0rem 3.3rem;
+}
+.contact div {
+    padding: 0.5rem 0.5rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+fieldset label{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+/********index********/
+#enter{
+    background:#1e2022 ;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.1rem;
+}
+.texto h4{
+    background: #1e2022;
+    color:#f6f4e6 ;
+    margin: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.foto{
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid#1e2022;
+}
+
+.container1{
+    border:#1e2022 ;
+    background:#f6f4e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0rem;
+    border: solid #1e2022;
+    margin-bottom: 0rem;
+}
+.container1 div{
+    margin: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.container1 p{
+    padding: 0.5rem;
+}
+/********colecciones********/
+.container2{
+    border:#1e2022 ;
+    background:#f6f4e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0rem;
+}
+.container2 div{
+    margin: 2rem;
+    text-align: center;
+    border: solid #1e2022;
+}
+/********FOOTER********/
+footer{
+    background-color:#1e2022 ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    color:#f6f4e6;
+    font-size:1.5rem ;
+    padding: 0.5rem;
+    border: solid #f6f4e6;
+}
