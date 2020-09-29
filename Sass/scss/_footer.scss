@@ -1,0 +1,16 @@
+.footer{
+    background-color: $negro;
+    .text-lg-left{
+        color: $blanco;
+    }
+    .btn{
+        border-radius: 1.25rem !important;
+        color: $blanco;
+    }
+    a{
+        color: $amarillo;
+    }
+    .text-center{
+    padding-top: 10px;
+    }
+}

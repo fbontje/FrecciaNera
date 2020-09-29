@@ -1,26 +1,18 @@
 .navbar{
-  height: 80px;
   .bg-black{
     background:$negro;
-  }
-  .nav-link{
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 0 1rem;
-    color: $blanco !important;
-    letter-spacing: 0.0625em;
-    i{
-      font-size: 1.5rem;
-    }
-  }
-  .navbar-toggler{
-    outline: none;
   }
   img{
     height: 80px;
   }
-}
-.bg-black{
-  background:$negro;
+  .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 16px;
+    padding-right: 16px;
+  }
+  .navbar-toggler{
+    outline: none;
+  }
 }
 

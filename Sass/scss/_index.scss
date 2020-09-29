@@ -1,3 +1,63 @@
+.container-fluid{
+    .col-12{
+        padding-bottom:15px ;
+    }
+    .row{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .col-lg-7 .masthead{
+        padding: 60px;
+        margin-left: 4rem;
+        .border-masthead{
+            border-radius: 20px;
+            width: 60%;
+        }
+    }
+    .color-box{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $amarillo;
+        height: 100%;
+        width: 80%;
+        border-radius: 20px 0 0 20px;
+        z-index: -1;
+    }
+    .col-lg-5 {
+        padding-left: 15%;
+        h2{
+        font-size: 54px;
+        padding-top: 60px;
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            font-weight: 100;
+            margin: 30px 0;
+        }
+        button{
+            width: 140px;
+            border: 0;
+            padding: 12px 10px;
+            outline: none;
+            color: $blanco;
+            background: $negro;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    }
+}
+.col-lg-5::after{
+    content: '';
+    width: 10px;
+    height: 88%;
+    background: linear-gradient(to bottom, $negro, $amarillo);
+    position: absolute;
+    left:-30px ;
+    top: 8px;
+}
+
 .fa-4x {
     font-size: 4em;
 }
@@ -17,7 +77,7 @@
         margin: auto;
         position: absolute;
         right: 0;
-        top: 30%;
+        top: 25%;
     }
 }
 .fa-stack {
@@ -30,9 +90,6 @@
     height: 2em;
     width: 2.5em;
 }
-.col-2{
-    h2{
-        font-size: 3rem;
-        line-height: 3.1rem;
-    }
+#carouselSection{
+        width: 100vh;
 }
