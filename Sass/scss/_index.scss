@@ -18,7 +18,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        background: $amarillo;
+        background: linear-gradient(to bottom, $naranja, $amarillo);
         height: 100%;
         width: 80%;
         border-radius: 20px 0 0 20px;
@@ -28,7 +28,6 @@
         padding-left: 15%;
         h2{
         font-size: 54px;
-        padding-top: 60px;
         }
         h3{
             font-size: 30px;
@@ -41,20 +40,23 @@
             border: 0;
             padding: 12px 10px;
             outline: none;
-            color: $blanco;
-            background: $negro;
+            transition: .3s;
+            color: $negro;
+            background: linear-gradient(to bottom, $naranja, $amarillo);
             cursor: pointer;
             border-radius: 20px;
         }
+        button:hover{
+            transform: scale(1.2); 
+        }
     }
-    .col-lg-5::after{
-        content: '';
-        width: 10px;
-        height: 100%;
-        background: linear-gradient(to bottom, $negro, $amarillo);
+    .line-box{
         position: absolute;
-        left:15% ;
-        top: 8px;
+        right: -10;
+        top: 0;
+        background: linear-gradient(to bottom, $naranja, $amarillo);
+        height: 45%;
+        width: 10px;
     }
 }
 .section-index{
@@ -82,7 +84,6 @@
         }
     }
     .fa-stack {
-        display: inline-block;
         height: 2em;
         position: relative;
         width: 2.5em;
@@ -91,8 +92,18 @@
         height: 2em;
         width: 2.5em;
     }
-    #carouselSection{
-            width: 100vh;
+    .col-xl-3, .col-6{
+        padding: 10px;
+        img{
+            width: 100%;
+        }
+        transition: transform 0.5s;
     }
+    .col-xl-3:hover{
+        transform: translateY(-10px);
+    }
+}
+#carouselSection{
+    width: 100vh;
 }
 

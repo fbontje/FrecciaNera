@@ -10,10 +10,20 @@ header{
       text-transform: uppercase;
       padding-right: 16px;
       color: $blanco;
+      margin-right: 1rem;
     }
     .navbar-toggler{
       outline: none;
     }
+    .dropdown-menu{
+      background-color: $negro;
+      min-width: 0;
+    }
   }
 }
-
+header nav ul li a{
+  color: $blanco !important;
+}
+header nav ul li a:hover{
+  color: $amarillo !important;
+}

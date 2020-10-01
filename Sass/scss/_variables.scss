@@ -6,13 +6,13 @@ $font-family1: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Robo
 $negro:#212529;
 $blanco:#fff;
 $amarillo:#fed136;
-$amarillointenso:#fed336;
+$naranja:#febf36;
 $gris:#6c757d;
 
 /*-----mixin-----*/
 @mixin section{
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     text-align: center;
     h2{
         font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
