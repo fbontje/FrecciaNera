@@ -1,18 +1,19 @@
-.navbar{
-  .bg-black{
-    background:$negro;
-  }
-  img{
-    height: 80px;
-  }
-  .nav-link{
-    font-size: 14px;
-    text-transform: uppercase;
-    padding-right: 16px;
-    padding-right: 16px;
-  }
-  .navbar-toggler{
-    outline: none;
+header{
+  background-color: $negro;
+  .navbar{
+    background-color:$negro;
+    img{
+      height: 80px;
+    }
+    .nav-link{
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 16px;
+      color: $blanco;
+    }
+    .navbar-toggler{
+      outline: none;
+    }
   }
 }
 
