@@ -1,10 +1,32 @@
 .container-fluid{
-    .col-12{
-        padding-bottom:15px ;
-    }
     .row{
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    .col-12{
+        padding-bottom:15px ;
+    }
+    .line-box{
+        @include box(-10,45%,10px);
+    }
+    .col-lg-5 {
+        padding-left: 15%;
+        h2{
+            font-size: 54px;
+            padding-left: 5px;
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            font-weight: 100;
+            margin: 30px 0;
+        }
+        button{
+            @include button(140px,$blanco,$d-amarillo);
+        }
+        button:hover{
+            transform: scale(1.2); 
+        }
     }
     .col-lg-7 .masthead{
         padding: 60px;
@@ -15,48 +37,9 @@
         }
     }
     .color-box{
-        position: absolute;
-        right: 0;
-        top: 0;
-        background: linear-gradient(to bottom, $naranja, $amarillo);
-        height: 100%;
-        width: 80%;
+        @include box(0,100%,80%);
         border-radius: 20px 0 0 20px;
         z-index: -1;
-    }
-    .col-lg-5 {
-        padding-left: 15%;
-        h2{
-        font-size: 54px;
-        }
-        h3{
-            font-size: 30px;
-            color: black;
-            font-weight: 100;
-            margin: 30px 0;
-        }
-        button{
-            width: 140px;
-            border: 0;
-            padding: 12px 10px;
-            outline: none;
-            transition: .3s;
-            color: $negro;
-            background: linear-gradient(to bottom, $naranja, $amarillo);
-            cursor: pointer;
-            border-radius: 20px;
-        }
-        button:hover{
-            transform: scale(1.2); 
-        }
-    }
-    .line-box{
-        position: absolute;
-        right: -10;
-        top: 0;
-        background: linear-gradient(to bottom, $naranja, $amarillo);
-        height: 45%;
-        width: 10px;
     }
 }
 .section-index{
@@ -65,10 +48,8 @@
         font-size: 4em;
     }
     .service-icon{
+        @include icon;
         display: inline-block;
-        height:2em;
-        position: relative;
-        width:2.5em ;
         margin-bottom: 1rem;
         padding: 0.8rem 1rem;
         .text-primary {
@@ -84,16 +65,16 @@
         }
     }
     .fa-stack {
-        height: 2em;
-        position: relative;
-        width: 2.5em;
+        @include icon;
     }
     .svg-inline--fa.fa-stack-2x {
-        height: 2em;
-        width: 2.5em;
+        @include icon;
     }
     .col-xl-3, .col-6{
         padding: 10px;
+        h4{
+            border-bottom:solid $negro;
+        }
         img{
             width: 100%;
         }
@@ -101,6 +82,9 @@
     }
     .col-xl-3:hover{
         transform: translateY(-10px);
+    }
+    .rating{
+        color: $amarillo;
     }
 }
 #carouselSection{

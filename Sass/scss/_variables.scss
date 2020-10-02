@@ -8,6 +8,7 @@ $blanco:#fff;
 $amarillo:#fed136;
 $naranja:#febf36;
 $gris:#6c757d;
+$d-amarillo:linear-gradient(to bottom, $naranja, $amarillo);
 
 /*-----mixin-----*/
 @mixin section{
@@ -32,4 +33,29 @@ $gris:#6c757d;
         font-weight: bold;
         text-transform: uppercase;
     }
+}
+@mixin box($right, $height, $width){
+    position: absolute;
+    top: 0;
+    right:$right ;
+    background: linear-gradient(to bottom, $naranja, $amarillo) ;
+    height:$height ;
+    width: $width;
+}
+@mixin button($width,$color,$bg) {
+    width: $width;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    transition: .3s;
+    color: $color;
+    background:$bg ;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 700;
+}
+@mixin icon {
+    height: 2em;
+    position: relative;
+    width: 2.5em;
 }

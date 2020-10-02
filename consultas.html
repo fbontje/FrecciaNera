@@ -1,61 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<!--META-->
-		<meta charset="utf-8">
-		<title class="titulo">Freccia Nera</title>
-		<!--STYLES-->
-		<link rel="stylesheet" href="css/style.css"/>
-		<link href="css/fontawesome.css" rel="stylesheet">
-		<link href="css/brands.css" rel="stylesheet">
-		<link href="css/solid.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<section class="contact">
-				<div><i class="fab fa-instagram"></i></div>
-				<div><i class="fab fa-whatsapp"></i></div>
-				<div><i class="fas fa-map-marker-alt"></i><span>  Rosario, Argentina</span></div>
-			</section>
-			<nav>
-					<img src="Imagenes/LOGO.png" alt="flecha"  class="logo">
-				<ul>
-				<li><a href="index.html"> Inicio</a></li>
-				<li><a href="collecciones.html">Colección</a></li>
-				<li><a href="sale.html"> Sale</a></li>	
-				<li><a href="consultas.html"> Consultas</a></li>
-				<li><a href="nosotros.html"> Nosotros</a></li>
-				</ul>
-			</nav>
-		</header> 
-		<section>
-			<h2 class="title1">CONSULTAS</h2>
-			<p>HOLA!  DEJANOS TODAS TUS DUDAS Y NOS ESTAREMOS CONTACTANDO A LA BREVEDAD PARA RESOLVERLAS. GRACIAS POR ELEGIRNOS.</p>
-			<form action="gracias.html" method="post" class="container" >
-			<fieldset >
-				<label for="nombre">Nombre(*)</label>
-				<input type="text" id="nombre" name="nombre" placeholder="Escribi tu nombre y apellido"><br>
-				<label for="correo">Correo (*)</label>
-				<input type="text" name="correo" placeholder="......@ejemplo.com"><br>
-				<label for="asunto">Asunto(*)</label>
-				<select name="asunto"><br>
-					<option></option>
-					<option value="1">Cambios</option>
-					<option value="2">Envios</option>
-					<option value="3">Stock</option>
-					<option value="4">Otros</option>
-				</select><br>
-				<label>Comentarios</label>
-				<textarea name="comentarios" cols="20" rows="5"></textarea><br>
-				<input type="checkbox" name="opcion" value="si">Suscribirse a nuestro Newsletter<br>
-				<input type="submit" name="botom" value="ENVIAR">
-				<input type="reset" name="Borrar" value="BORRAR">
-			</fieldset>
-		</section>
-		<footer>
-			<p>Copyright &copy; 2020</p>
-		</footer>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Freccia Nera | E-Commerce</title> 
+    <meta name="description" content="Encontra en nuestra tienda online indumentaria de alta calidad, con envios a todo el país, y pagalo en cuotas.">
+    <meta name="keyword" content="ROPA, REMERAS, BUZOS, CUOTAS, ENVIOS, JOGGERS, SALE">
+    <!--Icons-->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/brands.min.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Sass/css/main.css">
+  </head>
+  <body>
+    <!--Navbar-->
+    <header class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/LOGO-1.gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="colecciones.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Colección
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="remeras.html">Remeras</a>
+                    <a class="dropdown-item" href="hoodies.html">Hoodies</a>
+                    <a class="dropdown-item" href="joggers.html">Joggers</a>
+                    <a class="dropdown-item" href="camperas.html">Camperas</a>
+                    <a class="dropdown-item" href="accesorios.html">Accesorios</a>
+                    <a class="dropdown-item" href="sale.html">Sale</a>
+                    <a class="dropdown-item" href="colecciones.html">VER TODO</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consultas.html">contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+        <!-- Contacto-->
+        <section class="page-consultas">
+            <div class="container">
+				<h2>Contacto</h2>
+				<h3>HOLA! DEJANOS TODAS TUS DUDAS Y NOS ESTAREMOS CONTACTANDO A LA BREVEDAD PARA RESOLVERLAS. GRACIAS POR ELEGIRNOS.</h3>
+                <form id="contactForm">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Nombre y Apellido*" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Email*" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="phone" type="tel" placeholder="Teléfono*" required="required"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea">
+                                <textarea class="form-control" id="message" placeholder="Mensaje*" required="required"></textarea>
+							</div>
+							<select class="form-group form-control">
+                                <option></option>
+                                <option value="" disabled>Asunto</option>
+                                <option value="1" >Stock</option>
+                                <option value="2">Devoluciones</option>
+                                <option value="3">Envios</option>
+                                <option value="4">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 pt-4 text-center">
+                                <div class="form-group custom-control custom-checkbox mb-md-0">
+                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                                    <label class="custom-control-label" for="defaultContactFormCopy">Deseo Recibir Noticias</label>
+                                </div>
+                        </div>
+                    </div>
+					<button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="button" data-toggle="modal" data-target="#myModal">Enviar</button>
+					<div class="modal" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h4 class="modal-title">Consultas</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+								Tu consulta fue enviada
+								</div>
+								<button type="button">Cerrar</button>
+							</div>
+						</div>
+					</div>
+                </form>
+            </div>
+        </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-4 text-lg-left text-center">Copyright © Freccia Nera 2020</div>
+			<div class="col-lg-4 text-center">
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+			</div>
+			<div class="col-lg-4 text-lg-right text-center">
+			  <a class="mr-3" href="#!">Privacy Policy</a>
+			  <a href="#!">Terms of Use</a>
+			</div>
+		  </div>
+		</div>
+	  </footer>   
+	  <!-- Optional JavaScript -->
+	  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</body>
-</html>
+  </html>

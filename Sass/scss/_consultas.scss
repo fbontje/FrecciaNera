@@ -1,0 +1,12 @@
+.page-consultas{
+    @include section;
+    textarea.form-control {
+        height: 91px;
+    }
+    button{
+        @include button(140px,$blanco,$d-amarillo);
+    }
+    button:hover{
+        transform: scale(1.2); 
+    }
+}
