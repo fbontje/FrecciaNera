@@ -1,19 +1,12 @@
 .container-fluid{
     .row{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .col-12{
-        padding-bottom:15px ;
-    }
-    .line-box{
-        @include box(-10,45%,10px);
+        margin-top: 5.5rem;
+        margin-bottom: 3rem;
     }
     .col-lg-5 {
         padding-left: 15%;
         h2{
-            font-size: 54px;
-            padding-left: 5px;
+            @include title;
         }
         h3{
             font-size: 30px;
@@ -22,18 +15,20 @@
             margin: 30px 0;
         }
         button{
-            @include button(140px,$blanco,$d-amarillo);
+            @include button(140px,20px,$blanco,$d-amarillo);
         }
         button:hover{
             transform: scale(1.2); 
         }
     }
-    .col-lg-7 .masthead{
-        padding: 60px;
-        margin-left: 4rem;
-        .border-masthead{
-            border-radius: 20px;
-            width: 60%;
+    .col-lg-7 {
+        .masthead{
+            padding: 60px;
+            margin-left: 4rem;
+            img{
+                border-radius: 20px;
+                width: 60%;
+            }
         }
     }
     .color-box{
@@ -42,6 +37,7 @@
         z-index: -1;
     }
 }
+
 .section-index{
     @include section;
     .fa-4x {
@@ -73,7 +69,12 @@
     .col-xl-3, .col-6{
         padding: 10px;
         h4{
-            border-bottom:solid $negro;
+            border-bottom:solid $gris 1.5px;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        p{
+            color: $gris;
         }
         img{
             width: 100%;
@@ -86,8 +87,11 @@
     .rating{
         color: $amarillo;
     }
+    .carousel-inner{
+        img{
+            height: 70%;
+        }
+    }
 }
-#carouselSection{
-    width: 100vh;
-}
+
 

@@ -1,11 +1,13 @@
-.footer{
+footer{
     background-color: $negro;
-    .text-lg-left{
-        color: $blanco;
-    }
+    padding: 1.5rem 0;
+    color: $blanco;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
     .btn{
         border-radius: 1.25rem !important;
-        color: $blanco;
     }
     a{
         color: $amarillo;

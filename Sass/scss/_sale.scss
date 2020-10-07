@@ -1,0 +1,44 @@
+.sale{
+    padding-top: 6.5rem;
+    .row{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .col-12{
+        padding-bottom:15px ;
+    }
+    .col-lg-5 {
+        padding-left: 15%;
+        h2{
+            font-size: 54px;
+            padding-left: 5px;
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            font-weight: 100;
+            margin: 30px 0;
+        }
+        button{
+            @include button(140px,20px,$blanco,$d-amarillo);
+        }
+        button:hover{
+            transform: scale(1.2); 
+        }
+    }
+    .col-lg-7{
+        .masthead{
+            padding: 60px;
+            margin-left: 4rem;
+            .border-masthead{
+                border-radius: 20px;
+                height: 60%;
+            }
+        }
+    }
+    .color-box{
+        @include box(0,100%,80%);
+        border-radius: 20px 0 0 20px;
+        z-index: -1;
+    }
+}

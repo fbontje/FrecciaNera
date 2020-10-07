@@ -1,5 +1,21 @@
 header{
   background-color: $negro;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  nav{
+    ul{
+      li{
+        a{
+          color: $blanco !important;
+        }
+        a:hover{
+          color: $amarillo !important;
+        }
+      }
+    }
+  }
   .navbar{
     background-color:$negro;
     img{
@@ -13,17 +29,17 @@ header{
       margin-right: 1rem;
     }
     .navbar-toggler{
-      outline: none;
+      outline: none;@include button(50px,10px,$blanco,$amarillo);
     }
     .dropdown-menu{
       background-color: $negro;
       min-width: 0;
     }
   }
+  @media only screen and (min-width:992px){
+    .navbar{
+      height: 5rem;
+    }
+  }
 }
-header nav ul li a{
-  color: $blanco !important;
-}
-header nav ul li a:hover{
-  color: $amarillo !important;
-}
+

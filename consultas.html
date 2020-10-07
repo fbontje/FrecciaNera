@@ -22,120 +22,138 @@
   </head>
   <body>
     <!--Navbar-->
-    <header class="header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html"><img src="imagenes/LOGO-1.gif" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="colecciones.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Colección
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="remeras.html">Remeras</a>
-                    <a class="dropdown-item" href="hoodies.html">Hoodies</a>
-                    <a class="dropdown-item" href="joggers.html">Joggers</a>
-                    <a class="dropdown-item" href="camperas.html">Camperas</a>
-                    <a class="dropdown-item" href="accesorios.html">Accesorios</a>
-                    <a class="dropdown-item" href="sale.html">Sale</a>
-                    <a class="dropdown-item" href="colecciones.html">VER TODO</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="consultas.html">contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">nosotros</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html"><img src="imagenes/LOGO-1.gif" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="colecciones.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Colección
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="remeras.html">Remeras</a>
+                  <a class="dropdown-item" href="hoodies.html">Hoodies</a>
+                  <a class="dropdown-item" href="joggers.html">Joggers</a>
+                  <a class="dropdown-item" href="camperas.html">Camperas</a>
+                  <a class="dropdown-item" href="accesorios.html">Accesorios</a>
+                  <a class="dropdown-item" href="sale.html">Sale</a>
+                  <a class="dropdown-item" href="colecciones.html">VER TODO</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultas.html">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-        <!-- Contacto-->
-        <section class="page-consultas">
-            <div class="container">
-				<h2>Contacto</h2>
-				<h3>HOLA! DEJANOS TODAS TUS DUDAS Y NOS ESTAREMOS CONTACTANDO A LA BREVEDAD PARA RESOLVERLAS. GRACIAS POR ELEGIRNOS.</h3>
-                <form id="contactForm">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Nombre y Apellido*" required="required"/>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Email*" required="required"/>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="phone" type="tel" placeholder="Teléfono*" required="required"/>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea">
-                                <textarea class="form-control" id="message" placeholder="Mensaje*" required="required"></textarea>
-							</div>
-							<select class="form-group form-control">
-                                <option></option>
-                                <option value="" disabled>Asunto</option>
-                                <option value="1" >Stock</option>
-                                <option value="2">Devoluciones</option>
-                                <option value="3">Envios</option>
-                                <option value="4">Otro</option>
-                            </select>
-                        </div>
-                        <div class="col-md-12 pt-4 text-center">
-                                <div class="form-group custom-control custom-checkbox mb-md-0">
-                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                                    <label class="custom-control-label" for="defaultContactFormCopy">Deseo Recibir Noticias</label>
-                                </div>
-                        </div>
-                    </div>
-					<button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="button" data-toggle="modal" data-target="#myModal">Enviar</button>
-					<div class="modal" id="myModal">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-								<h4 class="modal-title">Consultas</h4>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								</div>
-								<div class="modal-body">
-								Tu consulta fue enviada
-								</div>
-								<button type="button">Cerrar</button>
-							</div>
-						</div>
-					</div>
-                </form>
+    <!--Contacto-->
+
+    <section class="page-consultas">
+      <div class="container">
+        <h2 class="title"> Consultas</h2>
+        <h3>Contactanos en nuestras redes.</h3>
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+            <div class="social">
+              <a class="btn btn-dark" href="#!"><i class="far fa-envelope"></i></a>
+              <h5>EMAIL</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
             </div>
-        </section>
+          </div>
+          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+            <div class="social">
+              <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+              <h5>INSTAGRAM</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
+            </div>
+          </div>
+          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+            <div class="social">
+              <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+              <h5>WHATSAPP</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Preguntas-->
+    <form action="" class="page-consultas main-form needs-validation bg-light">
+      <div class="container">
+        <h2>Dejanos tu mensaje</h2>
+				<h3>Hola! Dejanos todas tus dudas y nos estaremoscontactando a la brevedad para resolverlas. Gracias por elegirnos.</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido*" required/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="email" type="email" placeholder="Email*" required/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input class="form-control" id="phone" type="phone" placeholder="Teléfono*" required/>
+            </div>
+            <select class="form-group form-control">
+              <option value="" disabled selected>Asunto*</option>
+              <option value="1" >Stock</option>
+              <option value="2">Devoluciones</option>
+              <option value="3">Envios</option>
+              <option value="4">Otro</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group form-group-textarea">
+              <textarea class="form-control" id="message" placeholder="Mensaje*" required></textarea>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="form-group custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                <label class="custom-control-label" for="defaultContactFormCopy">Deseo Recibir Noticias</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">ENVIAR</button>
+      </div>
+    </form>
     <!-- Footer-->
-    <footer class="footer py-4">
-		<div class="container">
-		  <div class="row">
-			<div class="col-lg-4 text-lg-left text-center">Copyright © Freccia Nera 2020</div>
-			<div class="col-lg-4 text-center">
-			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
-			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
-			</div>
-			<div class="col-lg-4 text-lg-right text-center">
-			  <a class="mr-3" href="#!">Privacy Policy</a>
-			  <a href="#!">Terms of Use</a>
-			</div>
-		  </div>
-		</div>
-	  </footer>   
+    <footer>
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-4 text-lg-left text-center">
+          Copyright © Freccia Nera 2020
+        </div>
+        <div class="col-lg-4">
+          <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-dark mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
+          <a class="btn btn-dark mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="col-lg-4 text-lg-right text-center">
+          Diseñado por
+          <a href="#!">FABM</a>
+        </div>
+        </div>
+      </div>
+	  </footer> 
 	  <!-- Optional JavaScript -->
 	  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</body>
-  </html>
+</html>

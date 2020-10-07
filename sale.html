@@ -1,42 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<!--META-->
-	<meta charset="utf-8">
-	<title class="titulo">Freccia Nera</title>
-	<!--STYLES-->
-	<link rel="stylesheet" href="css/style.css"/>
-	<link href="css/fontawesome.css" rel="stylesheet">
-  	<link href="css/brands.css" rel="stylesheet">
-  	<link href="css/solid.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<section class="contact">
-			<div><i class="fab fa-instagram"></i></div>
-			<div><i class="fab fa-whatsapp"></i></div>
-			<div><i class="fas fa-map-marker-alt"></i><span>  Rosario, Argentina</span></div>
-		</section>
-		<nav>
-				<img src="Imagenes/LOGO.png" alt="flecha"  class="logo">
-			<ul>
-              <li><a href="index.html"> Inicio</a></li>
-              <li><a href="">Colección</a></li>
-              <li><a href="sale.html"> Sale</a></li>	
-              <li><a href="consultas.html"> Consultas</a></li>
-              <li><a href="nosotros.html"> Nosotros</a></li>
-          	</ul>
-		</nav>
-	</header> 
-	<section>
-		<h2 class="title1">SALE</h2>
-		<p>En este sector van los productos en sale
-		</p>
-	</section>
-	<footer>
-		<p>Copyright &copy; 2020</p>
-	</footer>
-</body>
-</html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Freccia Nera | E-Commerce</title> 
+    <meta name="description" content="Encontra en nuestra tienda online indumentaria de alta calidad, con envios a todo el país, y pagalo en cuotas.">
+    <meta name="keyword" content="ROPA, REMERAS, BUZOS, CUOTAS, ENVIOS, JOGGERS, SALE">
+    <!--Icons-->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/brands.min.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Sass/css/main.css">
+  </head>
+  <body>
+    <!--Navbar-->
+    <header class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/LOGO-1.gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="colecciones.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Colección
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="remeras.html">Remeras</a>
+                    <a class="dropdown-item" href="hoodies.html">Hoodies</a>
+                    <a class="dropdown-item" href="joggers.html">Joggers</a>
+                    <a class="dropdown-item" href="camperas.html">Camperas</a>
+                    <a class="dropdown-item" href="accesorios.html">Accesorios</a>
+                    <a class="dropdown-item" href="sale.html">Sale</a>
+                    <a class="dropdown-item" href="colecciones.html">VER TODO</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consultas.html">contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!--Masthead-->
+    <section class="container-fluid sale">
+      <div class="row">
+        <div class="col-lg-5 col-12 text-center my-auto">
+          <div class="row">
+            <div>
+            <div class="line-box"></div>
+            </div>
+            <div class="pl-2">
+              <h2>New Collection <br> 20'</h2>
+              <h3 class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+              <a href="colecciones.html"><button type="button">VER AHORA </button></a>
+            </div>
+          </div>
+          </div>
+        <div class="col-lg-7 col-12">  
+          <img src="imagenes/FN3.jfif" class="controller">
+          <div class="color-box"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-4 text-lg-left text-center">Copyright © Freccia Nera 2020</div>
+			<div class="col-lg-4 ">
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
+			  <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+			</div>
+			<div class="col-lg-4 text-lg-right text-center">
+			  <a class="mr-3" href="#!">Privacy Policy</a>
+			  <a href="#!">Terms of Use</a>
+			</div>
+		  </div>
+		</div>
+	  </footer>   
+	  <!-- Optional JavaScript -->
+	  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	</body>
+  </html>

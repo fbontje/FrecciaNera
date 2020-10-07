@@ -1,7 +1,22 @@
 .page-nosotros{
     @include section;
-    img{
+    padding-top: 7rem;
+    img.rounded-circle{
         width: 14rem;
         height: 14rem;
+        border: solid $amarillo;
+    }
+    .row{
+        border-radius: 20px;
+        .brand{
+            padding: 2rem;
+            color: $blanco;
+            background-color: $negro;
+            border: solid $gris;
+            margin: 0;
+            img{
+                width: 80%;
+            }
+        }
     }
 }
