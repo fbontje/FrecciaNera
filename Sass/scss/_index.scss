@@ -66,30 +66,10 @@
     .svg-inline--fa.fa-stack-2x {
         @include icon;
     }
-    .col-xl-3, .col-6{
-        padding: 10px;
-        h4{
-            border-bottom:solid $gris 1.5px;
-            text-transform: capitalize;
-            font-weight: 500;
-        }
-        p{
-            color: $gris;
-        }
-        img{
-            width: 100%;
-        }
-        transition: transform 0.5s;
-    }
-    .col-xl-3:hover{
-        transform: translateY(-10px);
-    }
-    .rating{
-        color: $amarillo;
-    }
-    .carousel-inner{
-        img{
-            height: 70%;
+    @media only screen and (min-width:992px){
+        .carousel{
+          width: 80%;
+          margin: auto;
         }
     }
 }

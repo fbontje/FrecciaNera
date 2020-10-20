@@ -1,6 +1,5 @@
 footer{
     background-color: $negro;
-    padding: 1.5rem 0;
     color: $blanco;
     display: flex;
     justify-content: center;
@@ -14,5 +13,6 @@ footer{
     }
     .text-center{
     padding-top: 10px;
+    padding-bottom: 10px;
     }
 }

@@ -60,96 +60,109 @@
       </div>
     </header>
     <!--Contacto-->
-
-    <section class="page-consultas">
+    <section class="pt-head page-consultas">
       <div class="container">
-        <h2 class="title"> Consultas</h2>
-        <h3>Contactanos en nuestras redes.</h3>
         <div class="row">
-          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+          <div class="col-lg-6 col-12">
+              <h2 class="title">Contacto</h2>
+          </div>
+          <div class="col-lg-6 col-12">
+              <nav aria-label="breadcrumb ">
+                  <ol class="breadcrumb d-flex justify-content-lg-end">
+                    <li class="breadcrumb-item p-2"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active p-2" aria-current="page">Contacto</li>
+                  </ol>
+              </nav>  
+          </div>
+          <div class="col-12 col-lg-4 ">
             <div class="social">
               <a class="btn btn-dark" href="#!"><i class="far fa-envelope"></i></a>
               <h5>EMAIL</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
+              <hr class="my-4"> 
+              <p>freccianera@dominio.com</p>
             </div>
           </div>
-          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+          <div class="col-12 col-lg-4 ">
             <div class="social">
               <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-instagram"></i></a>
               <h5>INSTAGRAM</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
+              <hr class="my-4"> 
+              <p>/freccianerawear</p>
             </div>
           </div>
-          <div class="col-10 mx-auto col-md-6 col-lg-4 ">
+          <div class="col-12 col-lg-4 ">
             <div class="social">
               <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
               <h5>WHATSAPP</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat odio facilis eligendi, corporis odit quidem delectus blanditiis itaque numquam sequi necessitatibus adipisci inventore atque molestiae modi. Dolor distinctio enim ullam.</p>
+              <hr class="my-4"> 
+              <p>+549341+++++++</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--Preguntas-->
-    <form action="" class="page-consultas main-form needs-validation bg-light">
-      <div class="container">
-        <h2>Dejanos tu mensaje</h2>
-				<h3>Hola! Dejanos todas tus dudas y nos estaremoscontactando a la brevedad para resolverlas. Gracias por elegirnos.</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido*" required/>
+    <section class="page-consultas bg-light">
+      <form action="" class="main-form needs-validation">
+        <div class="container">
+          <h2>Dejanos tu mensaje</h2>
+          <h3>Hola! Dejanos todas tus dudas y nos estaremoscontactando a la brevedad para resolverlas. Gracias por elegirnos.</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido*" required/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Email*" required/>
+              </div>
             </div>
-            <div class="form-group">
-              <input class="form-control" id="email" type="email" placeholder="Email*" required/>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" id="phone" type="phone" placeholder="Teléfono*" required/>
+              </div>
+              <select class="form-group form-control">
+                <option value="" disabled selected>Asunto*</option>
+                <option value="1" >Stock</option>
+                <option value="2">Devoluciones</option>
+                <option value="3">Envios</option>
+                <option value="4">Otro</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group form-group-textarea">
+                <textarea class="form-control" id="message" placeholder="Mensaje*" required></textarea>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="form-group custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                  <label class="custom-control-label" for="defaultContactFormCopy">Deseo Recibir Noticias</label>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input class="form-control" id="phone" type="phone" placeholder="Teléfono*" required/>
-            </div>
-            <select class="form-group form-control">
-              <option value="" disabled selected>Asunto*</option>
-              <option value="1" >Stock</option>
-              <option value="2">Devoluciones</option>
-              <option value="3">Envios</option>
-              <option value="4">Otro</option>
-            </select>
-          </div>
-          <div class="col-md-12">
-            <div class="form-group form-group-textarea">
-              <textarea class="form-control" id="message" placeholder="Mensaje*" required></textarea>
-            </div>
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="form-group custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                <label class="custom-control-label" for="defaultContactFormCopy">Deseo Recibir Noticias</label>
-            </div>
-          </div>
+          <button type="submit" class="btn btn-success">ENVIAR</button>
         </div>
-        <button type="submit" class="btn btn-success">ENVIAR</button>
-      </div>
-    </form>
+      </form>
+    </section>
     <!-- Footer-->
-    <footer>
+    <footer class="footer py-4">
       <div class="container">
         <div class="row">
-        <div class="col-lg-4 text-lg-left text-center">
-          Copyright © Freccia Nera 2020
-        </div>
-        <div class="col-lg-4">
-          <a class="btn btn-dark  mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-          <a class="btn btn-dark mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
-          <a class="btn btn-dark mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div class="col-lg-4 text-lg-right text-center">
-          Diseñado por
-          <a href="#!">FABM</a>
-        </div>
+            <div class="col-lg-4 text-lg-left text-center">
+              Copyright © Freccia Nera 2020
+            </div>
+            <div class="col-lg-4 ">
+              <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fas fa-map-marker-alt"></i></a>
+              <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right text-center">
+              <a class="mr-3" href="#!">Privacy Policy</a>
+              <a href="#!">Terms of Use</a>
+            </div>
         </div>
       </div>
-	  </footer> 
+    </footer>
 	  <!-- Optional JavaScript -->
 	  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

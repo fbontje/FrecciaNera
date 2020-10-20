@@ -1,0 +1,36 @@
+.page-consultas{
+    @include section;
+    .social{
+        background: $negro;
+        padding: 3rem ;
+        color: $blanco;
+        border-radius: 20px;
+        margin-top: 1rem; 
+        border-bottom: solid 0.5rem $amarillo;
+        hr{
+            border-color: $amarillo;
+            border-width: 0.5rem;
+            width: 7rem;
+            border-radius: 1px;
+            margin: auto;
+        }
+        a{
+            @include button (75px,1000px,$blanco,$d-amarillo);
+            font-size: 2rem;
+        }
+    }
+    form{
+        .form-control{
+            height: 3rem;
+        }
+        textarea.form-control {
+            height: 8rem;
+        }
+        button{
+            @include button(140px,20px,$blanco,$d-amarillo);
+        }
+        button:hover{
+            transform: scale(1.2); 
+        }
+    }
+}
