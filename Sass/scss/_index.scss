@@ -23,11 +23,19 @@
     }
     .col-lg-7 {
         .masthead{
-            padding: 60px;
-            margin-left: 4rem;
+            padding: 50px;
             img{
                 border-radius: 20px;
-                width: 60%;
+                width: 110%;
+            }
+        }
+        @media only screen and (min-width:992px){
+            .masthead{
+                margin-left: 4rem;
+                padding: 60px;
+                img{
+                    width: 60%;
+                }
             }
         }
     }
@@ -40,6 +48,28 @@
 
 .section-index{
     @include section;
+    .nyo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1.5rem;
+        border-radius: 20px;
+        transition: .3s;
+        margin-top: 1rem;
+        img{
+            width: 150px;
+        }
+        button{
+            @include button(140px,20px,$blanco,$d-amarillo);
+            margin-bottom: 0.5rem;
+        }
+        button:hover{
+            transform: scale(1.2); 
+        }
+    }
+    .nyo:hover{
+        transform: translateY(-.5rem);
+    }
     .fa-4x {
         font-size: 4em;
     }
@@ -70,6 +100,12 @@
         .carousel{
           width: 80%;
           margin: auto;
+        }
+        .nyo{
+            margin-top: 0;
+            img{
+                width: 300px;
+            }
         }
     }
 }

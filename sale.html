@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="Sass/css/main.css">
@@ -23,61 +24,239 @@
   <body>
     <!--Navbar-->
     <header class="header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html"><img src="imagenes/LOGO-1.gif" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="colecciones.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Colección
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="remeras.html">Remeras</a>
-                    <a class="dropdown-item" href="hoodies.html">Hoodies</a>
-                    <a class="dropdown-item" href="joggers.html">Joggers</a>
-                    <a class="dropdown-item" href="camperas.html">Camperas</a>
-                    <a class="dropdown-item" href="accesorios.html">Accesorios</a>
-                    <a class="dropdown-item" href="sale.html">Sale</a>
-                    <a class="dropdown-item" href="colecciones.html">VER TODO</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="consultas.html">contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">nosotros</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html"><img src="imagenes/logo.gif" alt="logo"><h1>freccia nera</h1></a>
+          <ul class="navbar-nav ml-auto order-lg-2">
+            <li class="nav-item ">
+                <a class="nav-link pr-0" href="carrito.html"><img class="cart" src="imagenes/carrito1.png" alt=""></a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse order-lg-1" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="colecciones.html">colección</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultas.html">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    <!--Masthead-->
-    <section class="container-fluid sale">
-      <div class="row">
-        <div class="col-lg-5 col-12 text-center my-auto">
-          <div class="row">
-            <div>
-            <div class="line-box"></div>
-            </div>
-            <div class="pl-2">
-              <h2>New Collection <br> 20'</h2>
-              <h3 class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-              <a href="colecciones.html"><button type="button">VER AHORA </button></a>
-            </div>
+    <!--Hoodies-->
+    <section class="page-colecciones">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <h2 class="title">SALE</h2>
           </div>
+          <div class="col-lg-6 col-12">
+            <nav aria-label="breadcrumb ">
+              <ol class="breadcrumb d-flex justify-content-lg-end">
+                <li class="breadcrumb-item p-2"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item p-2"><a href="colecciones.html">Colección</a></li>
+                <li class="breadcrumb-item active p-2" aria-current="page">Sale</li>
+              </ol>
+            </nav>  
           </div>
-        <div class="col-lg-7 col-12">  
-          <img src="imagenes/FN3.jfif" class="controller">
-          <div class="color-box"></div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO 2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO 2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/BUZO 2.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
+          <div class="col-lg-3 col-6 product">
+            <div class="zoom frame">
+              <img src="imagenes/remera1.jpeg" alt="buzo">
+            </div>
+            <h4>Lorem ipsum</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>$0000</p>
+          </div>
         </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="sale.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="sale.html">2</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
     <!-- Footer-->
